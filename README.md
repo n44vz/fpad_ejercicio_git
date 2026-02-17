@@ -3,9 +3,6 @@ Control de versiones y resolución de conflictos en Git
 **Objetivo:** 
 Simular un escenario real de desarrollo en equipo donde dos personas trabajan simultáneamente en el mismo archivo de una aplicación Streamlit, provocando un "Merge Conflict" que deberán resolver.
 
-**Entrega:** 
-La entrega será a través del campus, compartiendo el enlace del repositorio en donde trabajaron.
-
 **Importante:**
 En este taller ejecutará varios comandos en la terminal. **No se limite a copiar y pegar.** Parte fundamental del proceso de desarrollo de aplicaciones de datos es comprender lo que sucede internamente en cada proceso.
 
