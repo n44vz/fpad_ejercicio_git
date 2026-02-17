@@ -1,4 +1,4 @@
-Control de versiones y resolución de conflictos en Git
+# Control de versiones y resolución de conflictos en Git
 
 **Objetivo:** 
 Simular un escenario real de desarrollo en equipo donde dos personas trabajan simultáneamente en el mismo archivo de una aplicación Streamlit, provocando un "Merge Conflict" que deberán resolver.
