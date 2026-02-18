@@ -1,17 +1,21 @@
 import streamlit as st
 import pandas as pd
 
-# Configuración de página
+# Configuración básica
 st.set_page_config(page_title="Dashboard Ventas", layout="wide")
 
-# Carga de datos
+# Función de carga de datos
+@st.cache_data
 def load_data():
     return pd.read_csv('data/ventas.csv')
 
 df = load_data()
 
-st.title("📊 Reporte de Ventas")
-st.write("Datos crudos del sistema:", df)
+st.title("Reporte de Ventas")
+st.write("Datos cargados exitosamente:")
+st.dataframe(df.head())
+
+st.markdown("---")
 
 # Funcionalidad A: Filtros por Sucursal
 st.sidebar.header("Filtros")
