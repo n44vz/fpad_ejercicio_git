@@ -13,6 +13,10 @@ df = load_data()
 st.title("📊 Reporte de Ventas")
 st.write("Datos crudos del sistema:", df)
 
-# --- ZONA DE CONFLICTO ---
-# Zona para agregar conflictos distintos
-# -------------------------
+# Funcionalidad A: Filtros por Sucursal
+st.sidebar.header("Filtros")
+sucursal = st.sidebar.selectbox("Seleccionar Sucursal", df['sucursal'].unique())
+
+df_filtered = df[df['sucursal'] == sucursal]
+st.subheader(f"Ventas de la sucursal: {sucursal}")
+st.bar_chart(df_filtered.set_index('producto')['ingreso'])
