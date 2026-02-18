@@ -180,7 +180,7 @@ El **Rol B** debe resolver esto localmente:
 
 1.  Volver a la terminal y asegurarse de estar en su rama.
     
-2.  Traer los cambios que el Rol B ya fusionó en `main`:
+2.  Traer los cambios que el Rol A ya fusionó en `main`:
     ```bash
     git pull origin main
     ```
